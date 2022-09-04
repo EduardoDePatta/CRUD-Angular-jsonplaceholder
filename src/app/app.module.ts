@@ -10,6 +10,7 @@ import { ElementDialogComponent } from './components/element-dialog/element-dial
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { ElementDialogServiceService } from './service/element-dialog.service.service';
 
 
 
@@ -33,7 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ElementDialogServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
