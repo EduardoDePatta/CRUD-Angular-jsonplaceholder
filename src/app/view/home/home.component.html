@@ -12,19 +12,19 @@
       <td mat-cell *matCellDef="let element">{{ element.id }}</td>
     </ng-container>
 
-    <ng-container matColumnDef="userId">
-      <th id="thUserId" mat-header-cell *matHeaderCellDef>User Id</th>
-      <td id="tdUserId" mat-cell *matCellDef="let element">{{ element.userId }}</td>
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td id="tdUserId" mat-cell *matCellDef="let element">{{ element.name }}</td>
     </ng-container>
 
-    <ng-container matColumnDef="title">
-      <th mat-header-cell *matHeaderCellDef>Title</th>
-      <td mat-cell *matCellDef="let element">{{ element.title }}</td>
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef>Email</th>
+      <td mat-cell *matCellDef="let element">{{ element.email }}</td>
     </ng-container>
 
-    <ng-container matColumnDef="body">
-      <th mat-header-cell *matHeaderCellDef>Body</th>
-      <td mat-cell *matCellDef="let element">{{ element.body }}</td>
+    <ng-container matColumnDef="phone">
+      <th mat-header-cell *matHeaderCellDef>Phone</th>
+      <td mat-cell *matCellDef="let element">{{ element.phone }}</td>
     </ng-container>
 
     <ng-container matColumnDef="actions">
