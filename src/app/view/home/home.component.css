@@ -5,3 +5,15 @@ table {
 .container {
   padding: 50px 50px;
 }
+
+td{
+  font-size: 20px;
+}
+
+#tdUserId{
+  padding: 40px;
+}
+
+th{
+  width: 15px;
+}
