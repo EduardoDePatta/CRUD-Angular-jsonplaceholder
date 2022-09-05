@@ -7,24 +7,35 @@
       <mat-form-field >
         <mat-label>Id</mat-label>
         <input matInput [(ngModel)]="data.id" type="number" required formControlName="$key" >
+        <mat-error *ngIf="service.form.controls['$key'].errors">Id required.</mat-error>
       </mat-form-field>
 
       <mat-form-field >
         <mat-label>Name</mat-label>
         <input matInput [(ngModel)]="data.name" type="text" required formControlName="name">
+        <mat-error *ngIf="service.form.controls['name'].errors"> Name required.</mat-error>
       </mat-form-field>
+
       <mat-form-field >
         <mat-label>Email</mat-label>
         <input matInput [(ngModel)]="data.email" type="email" required formControlName="email">
+        <mat-error *ngIf="service.form.controls['email'].errors"> Email required.</mat-error>
       </mat-form-field>
+
       <mat-form-field >
         <mat-label>Phone</mat-label>
         <input matInput [(ngModel)]="data.phone" required formControlName="phone">
+        <mat-error *ngIf="service.form.controls['phone'].errors"> Phone required.</mat-error>
       </mat-form-field>
+
       <div mat-dialog-actions>
+
         <button mat-button (click)="onCancel()">Cancel</button>
+        
         <button *ngIf="!isChange" mat-button [mat-dialog-close]="data" cdkFocusInitial type="submit" [disabled]="service.form.invalid" >Create</button>
+
         <button *ngIf="isChange" mat-button [mat-dialog-close]="data" cdkFocusInitial type="submit" [disabled]="service.form.invalid">Edit</button>
+
       </div>
 
 
